@@ -1,12 +1,11 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
-    <!-- DaisyUI -->
+    <!-- DaisyUI-->
     <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -45,18 +44,24 @@
   </head>
 
   <body class="font-manrope">
-    <section
-      onclick="toggleCounter()"
-      class="flex justify-center items-center h-screen"
-    >
-      <div class="card p-4">
-        <p>Count: <span id="count-1">0</span></p>
-        <div class="flex space-x-3">
-          <button class="increase-button">Increase [+]</button>
-          <button class="decrease-button">Decrease [-]</button>
+    <section class="flex justify-center items-center h-screen">
+      <div class="discount-panel">
+        <h1 class="text-xl font-bold text-center my-4">
+          Total Purchase: 1500.00
+        </h1>
+        <!-- Don't use Form -->
+        <div class="flex">
+          <!-- DaisyUI Input Form -->
+          <input
+            id="coupon-field"
+            type="text"
+            placeholder="Coupon Code"
+            class="input input-bordered w-full max-w-xs"
+          />
+          <button id="coupon-btn" class="btn btn-primary">Apply</button>
         </div>
       </div>
     </section>
-    <script src="./js/simple_counter.js"></script>
+    <script src="./js/discount-coupon.js"></script>
   </body>
 </html>

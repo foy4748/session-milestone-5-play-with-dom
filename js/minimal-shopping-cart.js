@@ -1,6 +1,7 @@
-const cardsContainer = document.getElementById("cards-section");
+document.getElementsByTagName("html")[0].setAttribute("data-theme", "light");
 const cartItemSection = document.getElementById("shopping-cart-section");
 
+const cardsContainer = document.getElementById("cards-section");
 const cards = cardsContainer.getElementsByTagName("section");
 
 function singleCartItem(itemName, price) {
@@ -24,5 +25,7 @@ for (const singleCard of cards) {
     const newRowHTML = singleCartItem(itemName, itemPrice);
     cartItemSection.innerHTML += newRowHTML;
     cardBtn.setAttribute("disabled", true);
+    cardBtn.classList.add("btn", "btn-disabled");
+    singleCard.style.cursor = "not-allowed";
   });
 }

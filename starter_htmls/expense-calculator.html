@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House</title>
+    <!-- DaisyUI-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/d7b7563d24.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "gradient-start": "#FF8938",
+              "gradient-end": "#F00",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="font-manrope">
+    <section class="flex justify-center items-center mt-10">
+      <div class="expense-input-panel">
+        <h1 class="text-xl font-bold text-center my-4">Total Expenses: 0</h1>
+        <!-- Don't use Form -->
+        <div class="flex">
+          <!-- DaisyUI Input Form -->
+          <input
+            placeholder="Expense"
+            class="input input-bordered w-full max-w-xs"
+          />
+          <input
+            placeholder="Amount"
+            class="input input-bordered w-full max-w-xs"
+          />
+          <button id="expense-insert-btn" class="btn btn-primary">
+            Insert
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="mt-5 w-1/3 mx-auto">
+      <!-- Will be populated by JS -->
+
+      <!-- ------------------------------ -->
+      <!-- Example Expense Row -->
+      <div class="flex justify-between">
+        <p>Meal</p>
+        <p>80</p>
+      </div>
+      <!-- ------------------------------ -->
+    </section>
+  </body>
+</html>

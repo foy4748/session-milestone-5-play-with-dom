@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House</title>
+    <!-- DaisyUI-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/d7b7563d24.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "gradient-start": "#FF8938",
+              "gradient-end": "#F00",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="font-manrope">
+    <section class="grid grid-cols-12">
+      <!-- Card Section -->
+      <section
+        class="col-span-9 container mx-auto p-10 md:py-12 px-0 md:p-8 md:px-0"
+      >
+        <section class="p-5 md:p-0 grid grid-cols-4 gap-10 items-start">
+          <!-- Single Card -->
+          <section
+            class="p-5 py-10 bg-purple-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer"
+          >
+            <img
+              src="https://www.dropbox.com/s/mlor33hzk73rh0c/x14423.png?dl=1"
+              alt=""
+            />
+            <h1 class="text-2xl my-5">Soft Plushy Cushion Chair</h1>
+            <p class="mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, incidunt!
+            </p>
+            <h2 class="font-semibold mb-5">$29.99</h2>
+            <button
+              class="p-2 px-6 bg-purple-500 text-white rounded-md hover:bg-purple-600"
+            >
+              Add To Cart
+            </button>
+          </section>
+
+          <!-- Single Card -->
+          <section
+            class="p-5 py-10 bg-green-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer"
+          >
+            <img
+              src="https://www.dropbox.com/s/8ymeus1n9k9bhpd/y16625.png?dl=1"
+              alt=""
+            />
+            <h1 class="text-2xl my-5">Comfortable Wooden Chair</h1>
+            <p class="mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, incidunt!
+            </p>
+            <h2 class="font-semibold mb-5">$39.99</h2>
+            <button
+              class="p-2 px-6 bg-green-500 text-white rounded-md hover:bg-green-600"
+            >
+              Add To Cart
+            </button>
+          </section>
+
+          <!-- Single Card -->
+          <section
+            class="p-5 py-10 bg-red-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer"
+          >
+            <img
+              src="https://www.dropbox.com/s/ykdro56f2qltxys/hh2774663-87776.png?dl=1"
+              alt=""
+            />
+            <h1 class="text-2xl my-5">Multipurpose Wooden Trolly</h1>
+            <p class="mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, incidunt!
+            </p>
+            <h2 class="font-semibold mb-5">$19.99</h2>
+            <button
+              class="p-2 px-6 bg-red-500 text-white rounded-md hover:bg-red-600"
+            >
+              Add To Cart
+            </button>
+          </section>
+
+          <section
+            class="p-5 py-10 bg-blue-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer"
+          >
+            <img
+              src="https://www.dropbox.com/s/1fav310i2eqkdz8/tool2.png?dl=1"
+              alt=""
+            />
+            <h1 class="text-2xl my-5">Multipurpose Wooden Tool</h1>
+            <p class="mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, incidunt!
+            </p>
+            <h2 class="font-semibold mb-5">$34.99</h2>
+            <button
+              class="p-2 px-6 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+            >
+              Add To Cart
+            </button>
+          </section>
+        </section>
+      </section>
+      <!-- End of Card Section -->
+      <!-- Shopping Cart Section -->
+      <section class="pt-11 px-4 col-span-3 space-y-3">
+        <!-- <!-1- Single Cart Item Band -1-> -->
+        <div class="bg-slate-100 p-2 flex justify-between items-center">
+          <p class="text-sm">Soft Plushy Cushion Chair</p>
+          <p>$29.99</p>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

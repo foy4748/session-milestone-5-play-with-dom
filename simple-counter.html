@@ -46,13 +46,14 @@
 
   <body class="font-manrope">
     <section class="flex justify-center items-center h-screen">
-      <div class="card p-4">
-        <p>Count: 0</p>
+      <div id="counter" class="card p-4">
+        <p>Count: <span id="count">0</span></p>
         <div class="flex space-x-3">
-          <button>Increase [+]</button>
-          <button>Decrease [-]</button>
+          <button class="increase-button">Increase [+]</button>
+          <button class="decrease-button">Decrease [-]</button>
         </div>
       </div>
     </section>
+    <script src="./js/simple-counter.js"></script>
   </body>
 </html>
